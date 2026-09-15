@@ -1,0 +1,61 @@
+{
+    "name": "ugarit/slack-notification-channel",
+    "description": "Slack Notification Channel for ugarit.",
+    "keywords": [
+        "ugarit",
+        "notifications",
+        "slack"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muath R Abu Ouda",
+            "email": "muathrabuouda@hotmail.com",
+            "role": "Vision Leader of Ugarit"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com",
+            "role": "Original Creator & Primary Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0|^8.0",
+        "heritage/http": "^1.00.00",
+        "heritage/notifications": "^1.00.00",
+        "heritage/support": "^1.00.00"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "phpstan/phpstan": "^1.10|^2.0",
+        "phpunit/phpunit": "^9.0|^10.4|^11.5|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Heritage\\Notifications\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Heritage\\Tests\\Notifications\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.x-dev"
+        },
+        "ugarit": {
+            "providers": [
+                "Heritage\\Notifications\\SlackChannelServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "version": "1.00.00"
+}
